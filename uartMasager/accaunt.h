@@ -1,15 +1,19 @@
 #ifndef UARTSETTING_H
 #define UARTSETTING_H
 
+#include <string>
+#include <QtSerialPort/QSerialPort>
 
-class Accaunt::QSerialPort
+
+class Accaunt : public QSerialPort
 {
     private:
         std::string *_name;
     public:
-        void setName();
+        Accaunt(const std::string name):_name(new std::string(name)){}
+        void setName(std::string name);
         std::string getName();
-        ~Accaunt();
+        //~Accaunt();
 };
 
 #endif // UARTSETTING_H

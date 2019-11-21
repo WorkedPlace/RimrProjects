@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include <QTextEdit>
 #include <accaunt.h>
 
 namespace Ui {
@@ -17,14 +18,14 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private:
-    Ui::MainWindow *ui;
-    QPushButton *_sendButton = NULL;
-    QPushButton *_settingButton = NULL;
-    QTextEdit *_textBox = NULL;
+    Ui::MainWindow *ui = nullptr;
+    QPushButton *_sendButton = nullptr;
+    QPushButton *_settingButton = nullptr;
+    QTextEdit *_textBox = nullptr;
 };
 
 #endif // WINDOW_H

@@ -13,14 +13,21 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        window.cpp \
+    NullPointException.cpp \
+    addaccauntwindow.cpp \
+    connectionexception.cpp \
+    mainwindow.cpp \
+    message.cpp \
     accaunt.cpp \
-    everyexception.cpp \
     comunication.cpp
 
-HEADERS  += window.h \
+HEADERS  += \
+    NullPointException.h \
     accaunt.h \
-    everyexception.h \
-    comunication.h
+    addaccauntwindow.h \
+    comunication.h \
+    connectionexception.h \
+    mainwindow.h \
+    message.h
 
 FORMS    += window.ui
